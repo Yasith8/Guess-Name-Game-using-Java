@@ -21,6 +21,7 @@ String response = JOptionPane.showInputDialog(null,
 "Enter a guess between 1 and 100", "Guessing Game", 3);
 
 userAnswer = Integer.parseInt(response);
+  
 JOptionPane.showMessageDialog(null, ""+ determineGuess(userAnswer, computerNumber, count));
 
 count++;
