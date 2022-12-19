@@ -10,7 +10,7 @@ int computerNumber = (int) (Math.random()*100 + 1);
   
 int userAnswer = 0;
   
-System.out.println("The correct guess would be " + computerNumber);
+System.out.println("The correct guess would be " + computerNumber);   //give the hint
 
 int count = 1;
   
@@ -18,7 +18,7 @@ while (userAnswer != computerNumber)
 {
 String response = JOptionPane.showInputDialog(null,
                                               
-"Enter a guess between 1 and 100", "Guessing Game", 3);
+"Enter a guess between 1 and 100", "Guessing Game", 3);  //Display instruction
 
 userAnswer = Integer.parseInt(response);
   
@@ -32,6 +32,7 @@ public static String determineGuess(int userAnswer, int computerNumber, int coun
 
 
 if (userAnswer <=0 || userAnswer >100) {
+  
 return"Your guess is invalid";
 
 }
